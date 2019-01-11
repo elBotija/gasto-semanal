@@ -9,17 +9,23 @@ class ExpensesFrom extends Component{
 
     newExpens = (e) => {
         e.preventDefault()
-        // crear objeto
-        let expens = {
-            gastoNombre: this.gastoNombreRef.current.value,
-            catidadGasto: this.cantidadGastoRef.current.value
+        //validar campos
+        if(this.gastoNombreRef.current.value !== '' && this.cantidadGastoRef.current.value !== ''){
+
+            // crear objeto
+            let expens = {
+                gastoNombre: this.gastoNombreRef.current.value,
+                cantidadGasto: this.cantidadGastoRef.current.value
+            }
+
+            console.log(expens)
+            //enviarlo a las props
+            this.props.addExpens(expens)
+
+            //reset
+            e.currentTarget.reset()
         }
 
-        console.log(expens)
-        this.props.addExpens(expens)
-
-        //reset
-        e.currentTarget.reset()
 
     }
 
