@@ -19,7 +19,6 @@ class ExpensesFrom extends Component{
                 cantidadGasto: this.cantidadGastoRef.current.value
             }
 
-            console.log(expens)
             //enviarlo a las props
             this.props.addExpens(expens)
 
