@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/gasto-semanal/precache-manifest.78c18ca892e2c9afd158faed72fd8b14.js"
+  "/gasto-semanal/precache-manifest.12fcb62560b9d183e3b8627011648cba.js"
 );
 
 workbox.clientsClaim();
