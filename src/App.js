@@ -11,7 +11,7 @@ class App extends Component {
 
     state = {
         budget: '',
-        remaining: '',
+        remaining: 0,
         expens: {}
     }
 
@@ -26,7 +26,7 @@ class App extends Component {
         if(result){
             this.setState({
                 budget: budget,
-                remaining: budget
+                remaining: Number(budget)
             })
         }else{
             this.getBudget()

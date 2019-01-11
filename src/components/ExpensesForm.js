@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 class ExpensesFrom extends Component{
 
@@ -49,4 +50,9 @@ class ExpensesFrom extends Component{
         )
     }
 }
+
+ExpensesFrom.propTypes = {
+    addExpens: PropTypes.func.isRequired
+}
+
 export default ExpensesFrom

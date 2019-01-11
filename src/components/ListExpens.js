@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import RowExpen from './RowExpen'
+import PropTypes from 'prop-types'
 
 class ListExpens extends Component{
     render(){
@@ -23,6 +24,10 @@ class ListExpens extends Component{
             </table>
         )
     }
+}
+
+ListExpens.propTypes = {
+    expens: PropTypes.object.isRequired
 }
 
 export default ListExpens

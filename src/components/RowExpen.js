@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import PropTypes from 'prop-types'
 
 class RowExpen extends Component {
     render(){
@@ -11,6 +12,10 @@ class RowExpen extends Component {
             </tr>
         )
     }
+}
+
+RowExpen.propTypes = {
+    expen: PropTypes.object.isRequired
 }
 
 export default RowExpen
